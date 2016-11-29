@@ -1,3 +1,8 @@
+/*
+
+Ref : https://github.com/jackzzjack/blogger
+
+*/
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
