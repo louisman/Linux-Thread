@@ -46,7 +46,7 @@ int main()
 	pthread_create(&t1, NULL, &thread_1, NULL);
 	pthread_create(&t2, NULL, &thread_2, NULL);
 
-	//而我們自己的 main thread 也同樣執行無窮迴圈，每次停留三秒
+	//而我們自己的 main thread 也同樣執行無窮迴圈，每次停留三秒 
 	while(1)
 	{
 		gettimeofday(&tv,NULL);
