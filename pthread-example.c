@@ -53,6 +53,8 @@ int main()
 		sleep(3);
 		printf("I am main thread (sleep 3 sec)\n");
 		gettimeofday(&tv2,NULL);
+		start_utime = tv.tv_sec * 1000000 + tv.tv_usec;
+		end_utime =tv2.tv_sec * 1000000 + tv2.tv_usec;
 		printf("Main Thread Runtime %llu usec\n", (end_utime - start_utime));
 	}
 	return 0;
