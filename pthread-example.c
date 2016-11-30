@@ -49,8 +49,11 @@ int main()
 	//而我們自己的 main thread 也同樣執行無窮迴圈，每次停留三秒
 	while(1)
 	{
+		gettimeofday(&tv,NULL);
 		sleep(3);
 		printf("I am main thread (sleep 3 sec)\n");
+		gettimeofday(&tv2,NULL);
+		printf("Main Thread Runtime %llu usec\n", (end_utime - start_utime));
 	}
 	return 0;
 }
